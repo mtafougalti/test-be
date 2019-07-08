@@ -20,33 +20,3 @@ environment:
       name: int
       database: intdb
       description: Integration environment
-infrastructure: 
-   tt: 
-      hom: 
-         longname: socgen.glxhomtt11.fr
-         zone: fr
-         location: paris
-         env: &1 !com.mt.test.model.Environment
-            name: hom
-            database: homdb
-            description: hom11
-         shortname: glxhomtt11
-         user: glxhom11
-      int: 
-         longname: socgen.glxinttt11.fr
-         zone: fr
-         location: paris
-         env: !com.mt.test.model.Environment
-            name: int
-            database: intdb
-            description: int11
-         shortname: glxinttt11
-         user: glxint12
-   ac: 
-      hom: 
-         longname: socgen.glxhomac11.fr
-         zone: fr
-         location: paris
-         env: *1
-         shortname: glxhomac11
-         user: glxhom11
